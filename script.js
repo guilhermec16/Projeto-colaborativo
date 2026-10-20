@@ -50,35 +50,35 @@ const resposta3 = [
 "C) Fazer com que os alunos apenas memorizem informações, sem compreender."
 ]
 
-
-let i = 0;
+let i = 0
 let pontos = 0
 
-let r1 = document.getElementById('opcao1')
-let r2 = document.getElementById('opcao2')
-let r3 = document.getElementById('opcao3')
-
-r1.innerHTML = resposta1[i]
-r2.innerHTML = resposta2[i]
-r3.innerHTML = resposta3[i]
-
+let pergunta = document.getElementById("pergunta")
+let r1 = document.getElementById("opcao1")
+let r2 = document.getElementById("opcao2")
+let r3 = document.getElementById("opcao3")
 
 
 function Resposta1() {
-i += 1
-pontos += 1
-
+    if (i < perguntas.length) {
+        pontos += 1
+        i += 1
+        
+    }
 }
+
 function Resposta2() {
-i += 1
-pontos += 0
-
+    if (i < perguntas.length) {
+        i += 1
+        
+    }
 }
+
 function Resposta3() {
-i += 1
-pontos += -1
-
+    if (i < perguntas.length) {
+        pontos -= 1
+        i += 1
+        
+    }
 }
-
-
 
