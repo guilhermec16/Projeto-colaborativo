@@ -51,18 +51,18 @@ const resposta3 = [
 ]
 const pontos = 0
 
-let r1 = document.getelementbyid('opcao1')
-let r2 = document.getelementbyid('opcao2')
-let r3 = document.getelementbyid('opcao3')
+let r1 = document.getElementById('opcao1')
+let r2 = document.getElementById('opcao2')
+let r3 = document.getElementById('opcao3')
 
-i = 0;
+let i = 0;
 
-document.getelementbyid('pergunta').innerHtml = pergunta[i]
-r1.innerHtml = resposta1[i]
-r2.innerHtml = resposta2[i]
-r3.innerHtml = resposta3[i]
+document.getElementById('pergunta').innerHTML = perguntas[i]
+r1.innerHTML = resposta1[i]
+r2.innerHTML = resposta2[i]
+r3.innerHTML = resposta3[i]
 
-r1.addeventlistener('click' function () {
+r1.addEventListener('click', function () {
  
 pontos += 1
 i += 1
