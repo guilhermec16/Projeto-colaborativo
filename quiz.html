@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nilson Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+    <div class="quiz">
+
+        <h1 class="titulo">Nilson Quiz</h1>
+
+        <div class="pergunta">
+            <h2 class="numero" id="numeroPergunta">Pergunta 1</h2>
+            <p class="texto-pergunta" id="pergunta">Qual é a principal qualidade de um bom professor?</p>
+        </div>
+
+        <div class="espaco"></div>
+
+        <div class="alternativas">
+
+            <button class="opcao vermelha" id="opcao1" onclick="Resposta1()">
+                <span class="texto-opcao" id="texto1">Ter paciência e ajudar os alunos a aprender</span>
+                <span class="circulo"></span>
+            </button>
+
+            <button class="opcao azul" id="opcao2" onclick="Resposta2()">
+                <span class="texto-opcao" id="texto2">Seguir sempre o mesmo horário de aula</span>
+                <span class="circulo"></span>
+            </button>
+
+            <button class="opcao amarela" id="opcao3" onclick="Resposta3()">
+                <span class="texto-opcao" id="texto3">Ignorar os alunos.</span>
+                <span class="circulo"></span>
+            </button>
+
+        </div>
+
+        <p class="resultado" id="resultado"></p>
+
+        <p class="pontuacao" id="pontuacao">Pontuação: 0</p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
