@@ -49,29 +49,39 @@ const resposta3 = [
 "C) Desmotivar os alunos quando eles cometem erros.",
 "C) Fazer com que os alunos apenas memorizem informações, sem compreender."
 ]
+
 const pontos = 0
 
 let r1 = document.getElementById('opcao1')
 let r2 = document.getElementById('opcao2')
 let r3 = document.getElementById('opcao3')
 
-let i = 0;
-
-
-function quiz() {
-
-document.getElementById('pergunta').innerHTML = perguntas[i]
 r1.innerHTML = resposta1[i]
 r2.innerHTML = resposta2[i]
 r3.innerHTML = resposta3[i]
 
-r1.addEventListener('click', function () {
- 
-pontos += 1
+
+let i = 0;
+
+
+function Resposta1() {
 i += 1
-})
+
+pontos += 1
+
+}
+function Resposta2() {
+i += 1
+
+pontos += 0
+
+}
+function Resposta3() {
+i += 1
+
+pontos += -1
 
 }
 
-quiz()
+
 
