@@ -64,7 +64,7 @@ function MostrarPergunta() {
         r1.innerHTML = ""
         r2.innerHTML = ""
         r3.innerHTML = ""
-        alternativas.style.display = "none"
+    
     } else {
         pergunta.innerHTML = perguntas[i]
         r1.innerHTML = resposta1[i]
