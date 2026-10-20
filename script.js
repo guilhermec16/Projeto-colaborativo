@@ -50,7 +50,9 @@ const resposta3 = [
 "C) Fazer com que os alunos apenas memorizem informações, sem compreender."
 ]
 
-const pontos = 0
+
+let i = 0;
+let pontos = 0
 
 let r1 = document.getElementById('opcao1')
 let r2 = document.getElementById('opcao2')
@@ -61,24 +63,19 @@ r2.innerHTML = resposta2[i]
 r3.innerHTML = resposta3[i]
 
 
-let i = 0;
-
 
 function Resposta1() {
 i += 1
-
 pontos += 1
 
 }
 function Resposta2() {
 i += 1
-
 pontos += 0
 
 }
 function Resposta3() {
 i += 1
-
 pontos += -1
 
 }
