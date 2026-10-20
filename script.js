@@ -58,19 +58,32 @@ let r1 = document.getElementById("opcao1")
 let r2 = document.getElementById("opcao2")
 let r3 = document.getElementById("opcao3")
 
+function MostrarPergunta() {
+    if (i >= perguntas.length) {
+        pergunta.innerHTML = "Quiz finalizado! Pontuação: " + pontos
+        r1.innerHTML = ""
+        r2.innerHTML = ""
+        r3.innerHTML = ""
+    } else {
+        pergunta.innerHTML = perguntas[i]
+        r1.innerHTML = resposta1[i]
+        r2.innerHTML = resposta2[i]
+        r3.innerHTML = resposta3[i]
+    }
+}
 
 function Resposta1() {
     if (i < perguntas.length) {
         pontos += 1
         i += 1
-        
+        MostrarPergunta()
     }
 }
 
 function Resposta2() {
     if (i < perguntas.length) {
         i += 1
-        
+        MostrarPergunta()
     }
 }
 
@@ -78,7 +91,8 @@ function Resposta3() {
     if (i < perguntas.length) {
         pontos -= 1
         i += 1
-        
+        MostrarPergunta()
     }
 }
 
+MostrarPergunta()
